@@ -43,16 +43,16 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--tertiary);
-  box-shadow: 0 5px 35px var(--dark);
 }
 
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
   padding: 5px 1% 5px 6%;
-  margin: 0;
   font-size: 4vw;
   line-height: 1;
+  margin: 0;
+  
 }
 
 nav{
@@ -63,14 +63,14 @@ nav{
 
 nav a { 
   text-decoration: none;
+  margin-right: 15px;
   padding: 5px 10px;
   color: var(--secondary);
-  margin-right: 16px;
+
   transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
 }
-/* 20:33 delete later no commits */
 nav a:hover {
   background-size: 100% 100%;
   color: var(--primary);
@@ -86,18 +86,19 @@ main {
 }
 
 .hero-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
   background-color: #e8c0a9 ;
   background-image: url("../images/02-hero-bg.jpg"),linear-gradient(180deg, var(--secondary) 0);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 31h;
   color: var(--light);
   padding: 2% 6% ;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
+  
 }
 
 .hero-banner div {
@@ -108,31 +109,33 @@ main {
   background-color: var(--secondary);
   color: var(--tertiary);
   margin: 0;
-  font-size: 2.3 rem;
-  padding: 5px 10px;
   line-height: 1.2;
   display: inline;
+  font-size: 2.3 rem;
+  padding: 5px 10px;
+  
 
 }
 
 .pagewrapper {
-  max-width: 88%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-section {
-  margin: 25px 0;
-  padding: 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
+  margin: 25px 0;
+  padding: 10px 0;
+  
 }
 
 .page-section .para {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .page-section > h2 {
@@ -149,7 +152,8 @@ main {
 }
 
 .page-section p{
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: var(--dark);
 }
 
 .flex-item{
@@ -158,11 +162,10 @@ main {
   color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
-  /* flex-basis: ; */
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
-  margin: 0.5em;
+  margin: 0.7em;
   text-decoration: none;
   background-blend-mode: soft-light;
   transition: all 0.5s;
@@ -180,7 +183,7 @@ main {
 }
 
 .flex-item h3{
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .contact address{
@@ -225,5 +228,66 @@ main {
   background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nathab.com%2Fblog%2F&psig=AOvVaw2XTr1CztZvz5UIOsndEuNq&ust=1691521971594000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOil-sOgy4ADFQAAAAAdAAAAABAE") ;
   background-repeat: no-repeat;
 }
+
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  header h1{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+    margin-left: 1.7rem;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .flex-item {
+    margin: 1rem;
+    margin-left: 30px;
+    
+  }
+
+  .page-section > h2 {
+    margin-left: 1.7rem;
+  }
+
+  .contact address {
+    flex-direction: column;
+  }
+}
+
 
 
