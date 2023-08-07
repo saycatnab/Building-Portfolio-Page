@@ -147,3 +147,48 @@ main {
 .page-section p{
   margin-bottom: 20px;
 }
+
+.flex-item{
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  /* flex-basis: ; */
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+
+}
+
+.flex-item:first-child{
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: #c05c3e;
+}
+
+.flex-item h3{
+  font-size: 1.6rem;
+}
+
+.contact address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a:hover{
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
