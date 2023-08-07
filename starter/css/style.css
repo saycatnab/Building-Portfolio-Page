@@ -131,6 +131,10 @@ main {
   justify-content: center;
 }
 
+.page-section .para {
+  margin-left: 30px;
+}
+
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -187,8 +191,39 @@ main {
   height: 100%;
 }
 
+.contact address a{
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: larger;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  display: inline-block;
+}
+
 .contact address a:hover{
   background-size: 100% 88%;
   color: var(--secondary);
 }
+
+.project1 {
+  background-image: url("../images/02-portfolio-1.jpg") ;
+}
+
+.project2 {
+  background-image: url("../images/02-portfolio-2.jpg") ;
+}
+
+.project3 {
+  background-image: url("https://t3.ftcdn.net/jpg/03/73/51/06/360_F_373510690_cQQLplLNbi0l84A7sftZq8dSvdKOGCcj.jpg") ;
+}
+
+.project4 {
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nathab.com%2Fblog%2F&psig=AOvVaw2XTr1CztZvz5UIOsndEuNq&ust=1691521971594000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOil-sOgy4ADFQAAAAAdAAAAABAE") ;
+  background-repeat: no-repeat;
+}
+
 
